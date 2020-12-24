@@ -109,6 +109,7 @@ function draw()
         'Food': foodObj.getFoodStock(),
         'lastFed': lastFed
       }
+     foodObj.updateFoodStock(foodS)
     )
 }
 
