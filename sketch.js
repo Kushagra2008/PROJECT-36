@@ -104,12 +104,12 @@ function draw()
       foodS = 0;
     } 
     lastFed = hour()
+    foodObj.updateFoodStock(foodS)
     database.ref("/").update(
       {
         'Food': foodObj.getFoodStock(),
         'lastFed': lastFed
       }
-     foodObj.updateFoodStock(foodS)
     )
 }
 
